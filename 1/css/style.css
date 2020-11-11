@@ -43,6 +43,7 @@ body {
   margin-right: 30px;
   padding: 54px 36px 58px;
   list-style: none;
+  cursor: pointer;
 }
 
 .wrappers_wrapper::before {
@@ -85,7 +86,6 @@ body {
 
 .content .wrappers_wrapper:hover {
   background: #F61067;
-  cursor: pointer;
 }
 
 .content .wrappers_wrapper::before {
@@ -95,4 +95,38 @@ body {
   display: block;
   background: url(../img/ic-atom.svg) 50% no-repeat;
   border: none;
+}
+
+.promo {
+  background: #30124E;
+}
+
+.promo .title {
+  padding: 252px 0 12px;
+}
+
+.promo .wrappers {
+  padding: 60px 0 306px;
+  counter-reset: myCounter;
+}
+
+.promo .wrappers_wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 72px 36px 74px;
+}
+
+.promo .wrappers_wrapper:hover {
+  background: #F61067;
+}
+
+.promo .wrappers_wrapper::before {
+  counter-increment: myCounter;
+  content: "0" counter(myCounter);
+  color: #F61067;
+  background: none;
+  border: none;
+}
+
+.promo .wrappers_wrapper:hover::before {
+  color: #FCFCFC;
 }
