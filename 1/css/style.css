@@ -1,9 +1,71 @@
-body{
-  background: #ccc;
+body {
+  background: #ffffff;
+  font-family: 'M PLUS 1p', sans-serif;
+  color: #FCFCFC;
+  font-size: 27px;
 }
-div{
-  margin: 50px;
-  width: 50px;
-  height: 50px;
-  background: url(../img/c-youtube.svg) no-repeat;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #30233D;
+}
+
+.header_title {
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #F61067;
+  padding: 180px 0 12px;
+}
+
+.header_text {
+  width: 754px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.header_wrappers {
+  padding: 60px 0 183px;
+  display: flex;
+}
+
+.header_wrappers_wrapper {
+  border: 1px solid rgba(246, 16, 103, 0.5);
+  margin-right: 30px;
+  padding: 54px 36px 58px;
+  list-style: none;
+}
+
+.header_wrappers_wrapper::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  display: block;
+  background: url(../img/ic-atom-pink.svg) 50% no-repeat;
+  border: 1px solid rgba(246, 16, 103, 0.5);
+  border-radius: 50%;
+}
+
+.header_wrappers_wrapper:last-child {
+  margin-right: 0;
+}
+
+.header_wrappers_wrapper_title {
+  font-weight: 500;
+  padding-top: 18px;
+}
+
+.header_wrappers_wrapper_text {
+  font-size: 16px;
+  line-height: 26px;
+  padding-top: 13px;
 }
