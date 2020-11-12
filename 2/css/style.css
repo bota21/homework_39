@@ -1,0 +1,126 @@
+body {
+  background: #d58c2c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #656565;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 201px;
+  height: auto;
+  margin: 100px auto;
+  background: url(../img/bg.png) no-repeat;
+  background-size: cover;
+  border: 1px solid #b57725;
+  position: relative;
+  z-index: 101;
+}
+
+.title {
+  width: 202px;
+  font-weight: 700;
+  padding: 8px 0 10px;
+  border-radius: 3px 3px 0 0;
+  background: #404040;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+li {
+  padding: 9px 0 9px 45px;
+  border-bottom: 1px solid #acd1f6;
+  border-top: 1px solid #acd1f6;
+  position: relative;
+  cursor: pointer;
+  list-style: none;
+}
+
+li:first-child {
+  padding-top: 20px;
+  border-top: none;
+  margin-top: 32px;
+}
+
+li:last-child {
+  padding-bottom: 23px;
+  border-bottom: none;
+}
+
+li::before {
+  content: "";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 16%;
+  border-left: 4px double #fbc0b6;
+}
+
+li:last-child::before {
+  height: 100%;
+}
+
+li:first-child::before {
+  height: 107%;
+  top: -2px;
+}
+
+li::after {
+  content: "";
+  width: 11px;
+  height: 12px;
+  position: absolute;
+  background: url(../img/ic-check.png) 50% no-repeat;
+  top: 9px;
+  right: 179px;
+}
+
+li:last-child::after, li:first-child::after {
+  position: static;
+}
+
+li:hover {
+  color: #000;
+}
+
+li:hover::after {
+  content: "";
+  width: 11px;
+  height: 12px;
+  position: absolute;
+  background: url(../img/ic-hover.png) 50% no-repeat;
+  top: 9px;
+  right: 179px;
+}
+
+li:last-child:hover::after, li:first-child:hover::after {
+  position: static;
+}
+
+.border {
+  width: 194px;
+  height: 4px;
+  border: 1px solid #b57725;
+  position: absolute;
+  background: #f6ecdf;
+  top: 100%;
+  left: 1.5%;
+  z-index: 100;
+}
+
+.border_next {
+  width: 187px;
+  height: 4px;
+  border: 1px solid #b57725;
+  position: absolute;
+  background: #f6ecdf;
+  top: 101%;
+  left: 3.5%;
+}
