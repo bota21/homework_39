@@ -23,6 +23,7 @@ body {
 
 table {
   width: 100%;
+  table-layout: fixed;
 }
 
 .header {
@@ -46,6 +47,11 @@ table {
   text-align: left;
   font-weight: 700;
 }
+table th, table td{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 tr {
   border-bottom: 1px solid #D6D5D5;
@@ -53,6 +59,7 @@ tr {
 
 tr td {
   padding: 13px 0 14px 12px;
+  
 }
 
 .id_user {
@@ -69,7 +76,7 @@ tr td {
   border: 7px solid transparent;
   border-top: 7px solid #969699;
   top: -7px;
-  left: 41px;
+  left: 98px;
 }
 
 .triangle_item_down {
@@ -78,7 +85,7 @@ tr td {
   border: 7px solid transparent;
   border-bottom: 7px solid #969699;
   top: -25px;
-  left: 41px;
+  left: 98px;
 }
 
 .triangle_item_up:hover {
@@ -91,12 +98,12 @@ tr td {
 
 .profile_up {
   top: -7px;
-  left: 84px;
+  left: 120px;
 }
 
 .profile_down {
   top: -25px;
-  left: 84px;
+  left: 120px;
 }
 
 .table_buttons {
